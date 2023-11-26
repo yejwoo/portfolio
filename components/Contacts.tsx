@@ -45,7 +45,6 @@ export default function Contacts() {
                   >
                     <FaRegCopy className="text-gray-600 mt-1" />
                   </button>
-                  <Message />
                 </div>
               ))}
             </div>
