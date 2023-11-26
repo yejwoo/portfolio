@@ -75,7 +75,6 @@ export default function Header() {
           >
             <FaGithub className="mt-1 text-lg" />
           </a>
-          
         </div>
       </nav>
     </header>
