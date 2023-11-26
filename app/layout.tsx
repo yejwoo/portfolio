@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: '웹 개발자 우예진',
   description: 'Yejin Woo Portfolio',
+  icons: {
+    icon: "/favicon.ico",
+  }
 }
 
 export default function RootLayout({

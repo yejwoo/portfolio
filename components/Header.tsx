@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { IoMdContact } from "react-icons/io";
-
 import { Link } from "react-scroll";
 
 export default function Header() {
@@ -66,7 +65,7 @@ export default function Header() {
             duration={500}
             className="text-lg font-semibold leading-6 text-gray-700"
           >
-            Contacts
+            Activities
           </Link>
           <a
             href="https://github.com/yejwoo"
