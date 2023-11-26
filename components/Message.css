@@ -1,0 +1,47 @@
+.message-container {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.message-container.visible {
+  opacity: 1;
+}
+
+.message {
+  margin: 0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+.message-container.slide-in {
+  animation: slideIn 0.3s ease-in-out;
+}
+
+.message-container.slide-out {
+  animation: slideOut 0.3s ease-in-out;
+}
