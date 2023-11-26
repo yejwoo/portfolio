@@ -1,6 +1,4 @@
 import { FaRegCopy } from "react-icons/fa";
-
-import Message from "./Message";
 import Image from "next/image";
 
 const profiles = [
@@ -32,13 +30,13 @@ export default function Contacts() {
 
           <div className="flex gap-10">
             <div className="flex flex-col justify-center">
-              {profiles.map((profile) => (
-                <h3 className="mt-1 text-xl font-bold">{profile.title}</h3>
+              {profiles.map((profile, idx) => (
+                <h3 key={idx} className="mt-1 text-xl font-bold">{profile.title}</h3>
               ))}
             </div>
             <div className="flex flex-col justify-center">
-              {profiles.map((profile) => (
-                <div className="flex justify-content gap-2">
+              {profiles.map((profile, idx) => (
+                <div key={idx} className="flex justify-content gap-2">
                   <h3 className="mt-1 text-xl">{profile.value}</h3>
                   <button
                     onClick={() => {

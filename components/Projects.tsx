@@ -76,8 +76,8 @@ export default function Projects() {
                 </div>
                 <div className="lg:w-1/2 flex flex-col gap-2">
                   <div className="flex gap-1">
-                    {project.tags.map((tag) => (
-                      <span className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-sm font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">
+                    {project.tags.map((tag, idx) => (
+                      <span key={idx} className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-sm font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">
                         {tag}
                       </span>
                     ))}
@@ -99,8 +99,8 @@ export default function Projects() {
                   <p>{project.description}</p>
                   <p className="font-semibold">기능</p>
                   <ul>
-                    {project.features?.map((feature) => (
-                      <li key={feature}>- {feature}</li>
+                    {project.features?.map((feature, idx) => (
+                      <li key={idx}>- {feature}</li>
                     ))}
                   </ul>
                   <p className="font-semibold">느낀 점</p>
