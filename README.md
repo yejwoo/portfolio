@@ -8,7 +8,7 @@
 
 ## 2. 시연 
 
-<a href="portfolio-yejwoos-projects.vercel.app" target="_blank">웹 사이트 보러 가기</a>  
+<a href="https://portfolio-yejwoos-projects.vercel.app" target="_blank">웹 사이트 보러 가기</a>  
 
 ## 3. 사용 기술
 Next.js, TypeScript, TailwindCSS
