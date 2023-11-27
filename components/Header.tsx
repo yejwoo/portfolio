@@ -65,7 +65,7 @@ export default function Header() {
             duration={500}
             className="text-lg font-semibold leading-6 text-gray-700"
           >
-            Activities
+            Contacts
           </Link>
           <a
             href="https://github.com/yejwoo"
