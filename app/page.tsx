@@ -3,7 +3,6 @@
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Contacts from "@/components/Contacts";
-import Works from "@/components/Works";
 import Header from "@/components/Header";
 import Activities from "@/components/Activities";
 
@@ -11,12 +10,9 @@ export default function Home() {
   return (
     <main>
       <Header />
-      
       <About />
       <hr />
       <Projects />
-      <hr />
-      <Works />
       <hr />
       <Activities />
       <hr />

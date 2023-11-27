@@ -18,7 +18,7 @@ const projects = [
       "캐릭터, 아이템과 같은 오브젝트를 클래스로 관리하고, 비슷한 오브젝트는 상속하면서 객체 지향에 대한 개념을 다질 수 있었습니다. 후반부로 갈수록 코드 양이 길어져서 최대한 함수 하나에 한 가지 기능을 넣으려 노력했고, 하드코딩한 부분이 꽤 있고 전역 변수를 많이 사용했다는 점이 아쉬웠습니다. 처음으로 직접 구조를 설계하고 기능을 만든 프로젝트라서 의미있었습니다.",
     imageSrc: "/chocoluna.png",
     imageAlt: "chocoluna.png",
-    href: "https://github.com/yejwoo/chocoluna",
+    href: "https://yejwoo.github.io/chocoluna",
   },
   {
     tags: ["React", "Axios", "Styled-Components", "Node.js", "Azure"],
@@ -36,7 +36,7 @@ const projects = [
       "유저 타입에 따른 컴포넌트 렌더링",
     ],
     opinion:
-      "유저 타입이 두 가지였기 때문에 조건에 따라 컴포넌트를 렌더링하는 리액트의 장점을 활용할 수 있었습니다. socket.io를 활용해 실시간 채팅 기능을 구현한 점이 가장 재밌으면서 어려웠습니다. 웹 서비스 개발 후 배포하는 과정까지 경험하며 실무에 대한 기반을 다질 수 있었습니다.",
+      "유저 타입이 두 가지였기 때문에 조건에 따라 컴포넌트를 렌더링하는 리액트의 장점을 활용할 수 있었습니다. socket.io로 클라이언트와 서버단에서 이벤트를 주고받으며 실시간 채팅 기능을 완성하고, setInterval로 폴링을 요청을 보내 새 채팅방 알림 기능을 구현했습니다. 웹 서비스 개발 후 배포하는 과정까지 경험하며 실무에 대한 기반을 다질 수 있었습니다.",
     imageSrc: "/bugbusters.png",
     imageAlt: "bugbustesrs.png",
     href: "https://web-bugbusters.azurewebsites.net",
@@ -49,10 +49,10 @@ const projects = [
     description: "진행한 프로젝트를 한 곳에 정리하기 위해 포트폴리오 웹을 제작 후 배포했습니다.",
     features: ["반응형 컴포넌트 제작", "Vercel 배포"],
     opinion:
-      "서버에서 만든 HTML을 자바스크립트에서 바로 실행하는 Next.js 사용 후 동적으로 HTML을 생성하는 리액트와의 차이를 느낄 수 있었습니다. BootStrap처럼 클래스 이름을 탈부착하는 TailwindCSS 프레임워크를 사용하며 스타일링 시간이 많이 단축돼 편리했고, 긴 클래스명 때문에 HTML을 읽기 힘들다는 단점도 보였습니다. 이번 프로젝트에서는 타입스크립트의 장점을 크게 활용하지 못한 듯해 추후 금융 서비스를 제작하면서 더 깊게 공부할 예정입니다.",
+      "서버에서 만든 HTML을 자바스크립트에서 바로 실행하는 Next.js 사용 후 동적으로 HTML을 생성하는 리액트와의 차이를 느낄 수 있었습니다. BootStrap처럼 클래스 이름을 탈부착하는 TailwindCSS 프레임워크를 사용하며 스타일링 시간이 많이 단축돼 편리했고, 긴 클래스명 때문에 HTML을 읽기 힘들다는 단점도 보였습니다. 이번 프로젝트에서는 타입스크립트의 장점을 크게 활용하지 못한 듯해 더 깊게 공부할 예정입니다.",
     imageSrc: "/portfolio.png",
     imageAlt: "portfolio.png.",
-    href: "#",
+    href: "https://portfolio-yejwoos-projects.vercel.app",
   },
 ];
 
@@ -91,7 +91,7 @@ export default function Projects() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <button className="p-2 bg-zinc-800 rounded-md text-white hover:bg-zinc-600">자세히 보기</button>
+                      <button className="p-2 bg-zinc-800 rounded-md text-white hover:bg-zinc-600">보러 가기</button>
                     </a>
                   </div>
                   <p>{project.date}</p>

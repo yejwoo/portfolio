@@ -40,7 +40,7 @@ export default function Header() {
           >
             Projects
           </Link>
-          <Link
+          {/* <Link
             to="works"
             spy={true}
             smooth={true}
@@ -48,7 +48,7 @@ export default function Header() {
             className="text-lg font-semibold leading-6 text-gray-700"
           >
             Works
-          </Link>
+          </Link> */}
           <Link
             to="activities"
             spy={true}
