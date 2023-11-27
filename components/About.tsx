@@ -42,13 +42,13 @@ export default function About() {
               <div className="flex flex-col gap-8">
                 <div className="flex gap-12">
                   <div>
-                    {profiles.map((profile) => (
-                      <p className="font-semibold">{profile.title}</p>
+                    {profiles.map((profile, idx) => (
+                      <p className="font-semibold" key={idx}>{profile.title}</p>
                     ))}
                   </div>
                   <div>
-                    {profiles.map((profile) => (
-                      <div className="flex gap-2">
+                    {profiles.map((profile, idx) => (
+                      <div className="flex gap-2" key={idx}>
                         {profile.value.includes("git") ? (
                           <a
                             className="hover"
@@ -94,8 +94,8 @@ export default function About() {
           <h3 className="text-2xl font-semibold text-gray-800 tracking-tight">Skills</h3>
           <div className="flex">
             <div className="flex flex-col gap-2">
-              {skills.map((skill) => (
-                <div>
+              {skills.map((skill, idx) => (
+                <div key={idx}>
                   <p className="py-1 text-lg font-medium">{skill.name}</p>
                   <p className="py-1 text-lg">{skill.description}</p>
                 </div>
